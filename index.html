@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interative Card </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card__front">
+
+                <div class="logo">
+
+                    <img src="card-logo.svg" alt=" Card logo " class="img__logo">
+
+
+                </div>
+
+            
+                <div class="card__info">
+
+                    <div class="card__number">
+
+                        0000 0000 0000 0000
+    
+                    </div>
+    
+                    <div class="foot">
+    
+                        <div class="card__name">
+                            Muhammad bn Abdullah
+                        </div>
+    
+                        <div class="card__exp">
+                            <span class="exp__month">00</span> / <span class="exp__year">00</span>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="card__back">
+
+                <div class="card__cvc">
+                    000
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    <div class="inputs">
+        
+        <form action="#" class="form">
+
+
+            <div class="name">
+
+
+                    
+                <label for="name" class="label label__name"> CARDHOLDER NAME </label>
+
+                <input type="text" class="input input__name" id="name" placeholder="e.g. Muhammd Awwal" required>
+                <div class="error error__name">  </div>
+
+                </div>
+
+                
+                <div class="number">
+
+                    <label for="number" class="label label__number"> CARD NUMBER </label>
+                    
+                    <input type="text" class="input input__number" id="number" required minlength="16" maxlength="19"  placeholder="e.g. 1234 8190 6065 0000" > 
+
+                    <div class="error error__number" >  </div>
+    
+                </div>
+
+                
+            <div class="back">
+
+                <label for="exp" class="label label__exp"> EXP. DATE (MM/YY) </label>
+                
+                <div class="month">  
+                    
+                    <input type="number" class="input input__exp months" id="exp" placeholder="MM" min="01" max="12" minlength="2" maxlength="2" required>  
+                    <div class="error error__date ">  </div>
+
+                </div>
+
+                <div class="year">
+
+                    <input type="number" class="input input__exp years" placeholder="YY" minlength="2" maxlength="2" min="01" max="30" required>
+
+                </div>
+
+                <div class="cvc">
+
+                    <label for="cvc" class="label label__cvc">CVC</label>
+    
+                    <input type="number" class="input input__cvc" id="cvc" placeholder="e.g 123" minlength="3" maxlength="3" required>
+                    <div class="error error__cvc" >  </div>
+
+                </div>
+    
+            </div>
+
+                    <div class="confirm">
+
+                        Confirm
+
+                    </div>
+
+                </form>
+                
+            </div>
+
+        
+            <div class="wrapper">
+                <div class="completed">
+
+
+
+
+                    <img src="icon-complete.svg" alt=" completed icon " class="img__completed">
+
+                    <div class="final__thanks">
+
+                        THANK  YOU
+
+                    </div>
+
+                    <p class="sub">
+
+                        We've added your card details 
+
+                    </p>
+
+                    <div class="final__btn">
+
+                        Continue
+
+                    </div>
+
+                </div>       
+
+            </div>
+
+    </div>
+
+</body>
+</html>
